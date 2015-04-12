@@ -1,0 +1,23 @@
+1. .bashrc, .bash_profile, .ssh/config : config files
+2. ln -s [original file in <some folder>] [destination file] : creating symlink
+3. .bashrc file: loaded for logins and scripts
+                 Run Scripts
+4. .bash_profile: user interface
+                  Prompt, aliases, functions
+5. ^a : go to beginning of line
+6. ^e : go to end of line
+7. ^k : delete everything to the right
+8. ^w : delete previous word
+9. ESC-b : go back one word
+10. ESC-f : go forward one word
+11. !! : Previously executed commands
+12. !$ : Last argument of previous commands
+13. history : View previously executed commands
+14. !echo : Re-run a command by name
+15. ^r : interactive search of history
+16. ^g to abandon the command completion shown in ^r
+17. ^from^to : replace first occurence and run
+18. !<command num in history> : executes the command
+19. mv README{.txt, .textfile} : moves a file by expanding the list
+20. alias ss="./script/server" : alias ss is created (no embedded args in aliases)
+

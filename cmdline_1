@@ -1,0 +1,56 @@
+0. command -h or --help or help OR man command : to read the help do of <command>
+1. whoami : gives currently logged in username
+2. w : prints summary of activities on system including what each user is doing
+3. uname -a : shows OS, kernel version and the server user is working on
+3..pwd, ls 
+4. command [source] [destination] -flags 
+   or
+   command -flags [source] [destination]
+   for ex: cp -R -v samples my-samples
+5. sudo apt-get install <program-name>   
+6. cd, tree
+7. Pipe (ex: cat big.txt | more)
+   ex: cat smash_in2_vim1 | grep window | wc -w
+8. > : redirect the output of a command.
+       it overwrites the content of the file in whihc the output is redirected.
+   ex: cat temp.txt > read_later.txt
+9. >> : append the output of a command    
+10. < : read content from a file rather than from command line or o/p of a command. ex: more < data.txt 
+11. gzip : zip content of a file. ex: gzip sample-file.txt
+12. gzip -d : to decpmress the .gz file. ex: gzip -d sample-file.txt.gz
+13. tar : to pack the contents of a folder
+    for ex: tar -cvf commandline.tar command-line
+    or tar -czvf  commandline.tgz command-line : to pack and zip in one command
+    and tar -xvzf ~/commandline.tgz : to eXpand the compressed contents
+14. rm file : remove (delete) a file
+    rm -i file : remove with confirmation 
+    rm -r file : remove a directory and content
+    rm -f file : force removal without confirmation
+15. cp source.txt destinantion.txt
+16. mv copy-me.txt hello.txt : renames a file named copy-me.txt to hello.txt or moves a file location
+17. mkdir <folder>
+    mkdir -p a/b/c : create nested directory (similarly rmdir)
+18. rm -R dir1 : remove dir1 directory along with its content    
+19. tree dir1 : lists the dir1 contnt in tree format
+20. It is possible that a file has completely different permissions compared to the directory
+    in which it is contained.
+21. prepend "sudo" to run commands with SuperUser privilege
+    ex: sudo cp file1 file2
+        sudo nano file 
+        sudo reboot
+22. -rwxrwxrwx : permissions for user, group, others in sequence 
+21. To modify permissions :
+    chmod u+w <file> : add Write permission for User
+    chmod g-rw <file> : remove read and write permission for group
+    chmod u=rwx, go=r <file> : assign permissions to user, group and others
+    chmod a+rwx <file> : change permission for all
+    chmod -R u=rwx <dirname> : changes user permission for a dir and the files inside it
+22. To modify group of a file:
+    chgrp <group> <file> 
+23. To modify the owner of a file (super user permission might be required):
+    chown <owner> <file>
+24. ssh : secure shell to remotely login on a machine    
+    ssh <ip> or ssh <xyz.com> or ssh <user@xyz.com>
+25. scp, sftp for secure copy and secure transfer file
+    scp <file> <server:/directory>
+    ex: scp -r dir1 peepcode.local:~
